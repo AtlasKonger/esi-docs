@@ -1,0 +1,447 @@
+/* EVE Industry Tracker Custom Styles */
+
+:root {
+  --eve-primary: #1f4d7e;
+  --eve-secondary: #2c5f2d;
+  --eve-warning: #f39800;
+  --eve-danger: #e74c3c;
+  --eve-success: #27ae60;
+  --eve-info: #3498db;
+  --eve-dark: #2c3e50;
+  --eve-light: #ecf0f1;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navigation */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.85);
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #fff;
+}
+
+/* Cards */
+.card {
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  transition: box-shadow 0.15s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background-color: var(--eve-light);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  font-weight: 600;
+}
+
+/* Buttons */
+.btn {
+  border-radius: 0.375rem;
+  font-weight: 500;
+  transition: all 0.15s ease-in-out;
+}
+
+.btn-primary {
+  background-color: var(--eve-primary);
+  border-color: var(--eve-primary);
+}
+
+.btn-primary:hover {
+  background-color: #17415c;
+  border-color: #17415c;
+}
+
+/* Priority Badges */
+.badge.bg-danger {
+  background-color: var(--eve-danger) !important;
+}
+
+.badge.bg-warning {
+  background-color: var(--eve-warning) !important;
+  color: #000 !important;
+}
+
+.badge.bg-info {
+  background-color: var(--eve-info) !important;
+}
+
+.badge.bg-success {
+  background-color: var(--eve-success) !important;
+}
+
+/* Tables */
+.table {
+  margin-bottom: 0;
+}
+
+.table-hover tbody tr:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+
+.table-dark {
+  background-color: var(--eve-dark);
+}
+
+/* Progress Bars */
+.progress {
+  border-radius: 0.25rem;
+  background-color: #e9ecef;
+}
+
+.progress-bar {
+  transition: width 0.6s ease;
+}
+
+/* Status Indicators */
+.status-active {
+  color: var(--eve-success);
+}
+
+.status-paused {
+  color: var(--eve-warning);
+}
+
+.status-ready {
+  color: var(--eve-info);
+}
+
+.status-delivered {
+  color: var(--eve-primary);
+}
+
+.status-cancelled {
+  color: var(--eve-danger);
+}
+
+/* Priority Indicators */
+.priority-critical {
+  border-left: 4px solid var(--eve-danger);
+}
+
+.priority-high {
+  border-left: 4px solid var(--eve-warning);
+}
+
+.priority-medium {
+  border-left: 4px solid var(--eve-info);
+}
+
+.priority-low {
+  border-left: 4px solid #6c757d;
+}
+
+/* Landing Page Jumbotron */
+.jumbotron {
+  background: linear-gradient(135deg, var(--eve-primary) 0%, #2980b9 100%);
+  border-radius: 0.5rem;
+}
+
+/* Feature Cards */
+.card h5.card-title {
+  color: var(--eve-dark);
+  font-weight: 600;
+}
+
+.card .fa-3x {
+  opacity: 0.8;
+}
+
+/* Statistics Cards */
+.card.text-white h2 {
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.card.text-white .card-title {
+  font-size: 1rem;
+  font-weight: 500;
+  opacity: 0.9;
+}
+
+/* Forms */
+.form-control:focus {
+  border-color: var(--eve-primary);
+  box-shadow: 0 0 0 0.2rem rgba(31, 77, 126, 0.25);
+}
+
+.form-select:focus {
+  border-color: var(--eve-primary);
+  box-shadow: 0 0 0 0.2rem rgba(31, 77, 126, 0.25);
+}
+
+/* Alerts */
+.alert {
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.alert-info {
+  background-color: #e8f4fd;
+  color: #0c5460;
+}
+
+.alert-warning {
+  background-color: #fff3cd;
+  color: #664d03;
+}
+
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.alert-success {
+  background-color: #d1eddd;
+  color: #0f5132;
+}
+
+/* Loading States */
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* Tooltips */
+.tooltip {
+  font-size: 0.875rem;
+}
+
+/* Footer */
+footer {
+  margin-top: auto;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .card.text-white h2 {
+    font-size: 2rem;
+  }
+
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+
+  .btn-sm {
+    font-size: 0.8rem;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-in {
+  animation: slideIn 0.3s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-10px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Industry Activity Icons */
+.activity-manufacturing {
+  color: #3498db;
+}
+
+.activity-research-te {
+  color: #e74c3c;
+}
+
+.activity-research-me {
+  color: #f39c12;
+}
+
+.activity-copying {
+  color: #9b59b6;
+}
+
+.activity-invention {
+  color: #1abc9c;
+}
+
+/* Corporation Badge */
+.corp-badge {
+  background: linear-gradient(45deg, var(--eve-primary), var(--eve-secondary));
+  color: white;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+/* Admin Crown */
+.admin-crown {
+  color: #f1c40f;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+/* Job Status Indicators */
+.job-status {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.job-status i {
+  font-size: 0.875rem;
+}
+
+/* Deadline Indicators */
+.deadline-overdue {
+  color: var(--eve-danger);
+  font-weight: 600;
+}
+
+.deadline-urgent {
+  color: var(--eve-warning);
+  font-weight: 500;
+}
+
+.deadline-normal {
+  color: var(--bs-secondary);
+}
+
+/* Empty State Styling */
+.empty-state {
+  padding: 3rem 1rem;
+  text-align: center;
+}
+
+.empty-state i {
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+
+.empty-state h4 {
+  color: #6c757d;
+  margin-bottom: 0.5rem;
+}
+
+.empty-state p {
+  color: #6c757d;
+  margin-bottom: 1.5rem;
+}
+
+/* Filter Controls */
+.filter-controls {
+  background-color: #f8f9fa;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.filter-controls .form-select,
+.filter-controls .form-control {
+  border: 1px solid #ced4da;
+}
+
+/* Quick Actions */
+.quick-actions .btn {
+  text-align: left;
+  padding: 0.75rem 1rem;
+}
+
+.quick-actions .btn i {
+  width: 1.25rem;
+  text-align: center;
+  margin-right: 0.5rem;
+}
+
+/* Statistics Cards Hover Effects */
+.stats-card {
+  transition: transform 0.2s ease-in-out;
+}
+
+.stats-card:hover {
+  transform: translateY(-2px);
+}
+
+/* Modal Enhancements */
+.modal-header {
+  background-color: var(--eve-light);
+  border-bottom: 1px solid #dee2e6;
+}
+
+.modal-footer {
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+}
+
+/* Utility Classes */
+.text-eve-primary {
+  color: var(--eve-primary) !important;
+}
+
+.text-eve-secondary {
+  color: var(--eve-secondary) !important;
+}
+
+.bg-eve-primary {
+  background-color: var(--eve-primary) !important;
+}
+
+.bg-eve-secondary {
+  background-color: var(--eve-secondary) !important;
+}
+
+.border-eve-primary {
+  border-color: var(--eve-primary) !important;
+}
+
+.border-eve-secondary {
+  border-color: var(--eve-secondary) !important;
+}

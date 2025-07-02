@@ -1,0 +1,97 @@
+{% extends "base.html" %}
+
+{% block title %}EVE Industry Tracker - Home{% endblock %}
+
+{% block content %}
+<div class="row">
+  <div class="col-lg-8 mx-auto text-center">
+    <div class="jumbotron bg-primary text-white p-5 rounded">
+      <h1 class="display-4"><i class="fas fa-industry"></i> EVE Industry Tracker</h1>
+      <p class="lead">Streamline your corporation's industrial operations with comprehensive job tracking and
+        management.</p>
+      <hr class="my-4">
+      <p>Track required jobs, monitor ongoing industrial activities, and coordinate with your corporation members
+        efficiently.</p>
+      <a class="btn btn-light btn-lg" href="{{ url_for('login') }}" role="button">
+        <i class="fab fa-empire"></i> Login with EVE Online
+      </a>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body text-center">
+        <i class="fas fa-tasks fa-3x text-primary mb-3"></i>
+        <h5 class="card-title">Job Management</h5>
+        <p class="card-text">Create and track required industrial jobs for your corporation. Set priorities and
+          deadlines to keep production on schedule.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body text-center">
+        <i class="fas fa-sync fa-3x text-success mb-3"></i>
+        <h5 class="card-title">Real-time Sync</h5>
+        <p class="card-text">Automatically sync with the EVE Online API to track ongoing industrial jobs across all
+          corporation members.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card h-100">
+      <div class="card-body text-center">
+        <i class="fas fa-users fa-3x text-info mb-3"></i>
+        <h5 class="card-title">Multi-User Support</h5>
+        <p class="card-text">Multiple characters can contribute to corporation goals with admin oversight and
+          coordination tools.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row mt-5">
+  <div class="col-lg-10 mx-auto">
+    <h3 class="text-center mb-4">Features</h3>
+    <div class="row">
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li><i class="fas fa-check text-success"></i> <strong>EVE SSO Authentication</strong> - Secure login with EVE
+            Online credentials</li>
+          <li><i class="fas fa-check text-success"></i> <strong>Corporation Integration</strong> - Automatic corporation
+            detection and role management</li>
+          <li><i class="fas fa-check text-success"></i> <strong>Job Prioritization</strong> - Set priorities and
+            deadlines for industrial tasks</li>
+          <li><i class="fas fa-check text-success"></i> <strong>Real-time Tracking</strong> - Monitor ongoing jobs with
+            live status updates</li>
+        </ul>
+      </div>
+      <div class="col-md-6">
+        <ul class="list-unstyled">
+          <li><i class="fas fa-check text-success"></i> <strong>Admin Controls</strong> - Designate admins to manage
+            corporation requirements</li>
+          <li><i class="fas fa-check text-success"></i> <strong>Progress Monitoring</strong> - Track completion status
+            and assignments</li>
+          <li><i class="fas fa-check text-success"></i> <strong>API Integration</strong> - Seamless integration with EVE
+            Online's ESI API</li>
+          <li><i class="fas fa-check text-success"></i> <strong>User Management</strong> - Control access and
+            permissions for corporation members</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="alert alert-info mt-5">
+  <h5><i class="fas fa-info-circle"></i> Getting Started</h5>
+  <p class="mb-0">To begin using the EVE Industry Tracker, you'll need to authenticate with your EVE Online account. The
+    application requires the following permissions:</p>
+  <ul class="mt-2 mb-0">
+    <li>Read character industrial jobs</li>
+    <li>Read corporation industrial jobs</li>
+    <li>Read corporation roles</li>
+  </ul>
+</div>
+{% endblock %}
